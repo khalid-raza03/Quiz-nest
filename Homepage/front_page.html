@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front-styles.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a target="_blank" href="/About Developer/about.html">About Dev</a>
+        <a href="#" id="popup-trigger">Get Help</a>
+        <div class="navbar-right">
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </div>
+    
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Get Help</h2>
+            
+            <p> <b> FAQs (Frequently Asked Questions):</b> Create a list of commonly asked questions and provide clear, concise answers. Cover topics like how to start a quiz, troubleshooting issues, and account management. </p>
+            
+            <p> <b>Contact Support:</b> Offer multiple ways for users to reach out for help, such as an email address, a contact form, or a live chat option. </p>
+           
+            <p><b> Privacy and Security:</b> Explain the app's privacy and security policies to reassure users that their data is protected. Provide details about how user information is handled and stored.</p>
+    
+    
+              <p><b> Terms of Service and Policies:</b>Ensure that users have access to the app's terms of service, privacy policy, and any other relevant policies. Make it clear how users are expected to abide by these terms. </p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>    
+
+    <div class="container">
+        <header>
+            <div class="heading">
+                <h1 class="welcome"><b>W</b>elcome to</h1>
+                <h2 class="quiz"> "Quiz Nest" </h2>
+            </div>           
+            <div>
+        
+                <button id="rulesBtn">Rules</button>
+            </div>
+            
+            <p>Are you ready to test your knowledge?</p>
+        <a  class="start" target="_blank" href="/Main/index.html">Start Quiz</a>
+        </div>
+    </header>
+        
+    </div>
+    <div class="popup" id="rulesPopup">
+        <div class="popup-content">
+            <h2>Quiz Rules</h2>
+            <p>1. After starting the quiz, don't reload the page.</p>
+            <p>2. Score will be displayed after quiz completion.</p>
+            <p>3. Answer the questions to the best of your knowledge.</p>
+            <p>4. Select "next" after submitting answer of your question</p>
+            <p>5. You can select category, difficulty,number as well as time taken per questions.</p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <button id="feedback-button">&#128172;</button>
+
+    <div id="feedback-popup">
+        <h2>Feedback</h2>
+         
+        <textarea rows="8" cols="5" placeholder="Write your feedback here..."></textarea>
+        <button id="submit-feedback">Submit</button>
+    </div>
+    <footer>
+        <a href="/conatct-section/feedback.html" class="contact">Contact Us</a>
+    </footer>
+
+    <script src="front-script.js"></script>
+</body>
+</html>
